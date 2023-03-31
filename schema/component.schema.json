@@ -1,0 +1,119 @@
+{
+  "$anchor": "extra-component",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "component"
+    },
+    "with": {
+      "properties": {
+        "_extra": {
+          "type": "object",
+          "title": "Extra",
+          "default": {},
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Enable extra content",
+              "description": "Set to true to enable extra content",
+              "default": true
+            },
+            "_showOnModelCompleted": {
+              "type": "boolean",
+              "title": "Show on model completed",
+              "description": "Set to true to show extra content on model completed",
+              "default": false
+            },
+            "_selector": {
+              "type": "string",
+              "title": "Selector",
+              "description": "Set to a selector to append to",
+              "default": ".component__inner"
+            },
+            "_appendTo": {
+              "type": "string",
+              "title": "Append to",
+              "description": "Set to 'top' to append to the top of the component",
+              "default": "bottom",
+              "enum": ["bottom", "top"],
+              "_backboneForms": "Select"
+            },
+            "text": {
+              "type": "string",
+              "title": "Text",
+              "description": "Extra content text",
+              "default": "",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+
+            "_items": {
+              "type": "array",
+              "title": "Items",
+              "description": "Extra content items",
+              "default": [],
+              "items": {
+                "type": "object",
+                "title": "Item",
+                "default": {},
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "title": "Item title",
+                    "description": "This is the item title",
+                    "default": "",
+                    "_adapt": {
+                      "translatable": true
+                    }
+                  },
+                  "body": {
+                    "type": "string",
+                    "title": "Item body",
+                    "description": "This is the item body",
+                    "default": "",
+                    "_adapt": {
+                      "translatable": true
+                    }
+                  },
+                  "_graphic": {
+                    "type": "object",
+                    "title": "Item graphic",
+                    "default": {},
+                    "properties": {
+                      "_src": {
+                        "type": "string",
+                        "title": "Source",
+                        "description": "This is the item graphic source",
+                        "default": ""
+                      },
+                      "_alt": {
+                        "type": "string",
+                        "title": "Alt",
+                        "description": "This is the item graphic alt text",
+                        "default": ""
+                      }
+                    }
+                  },
+                  "classes": {
+                    "type": "string",
+                    "title": "Classes",
+                    "description": "Extra content item classes",
+                    "default": ""
+                  }
+                }
+              },
+              "_classes": {
+                "type": "string",
+                "title": "Classes",
+                "description": "Question feedback classes",
+                "default": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

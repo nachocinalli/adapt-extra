@@ -1,0 +1,17 @@
+{
+  "name": "adapt-extra",
+  "version": "1.0.0",
+  "framework": ">=5.17.7",
+  "homepage": "https://github.com/nachocinalli/adapt-extra",
+  "bugs": "https://github.com/nachocinalli/adapt-extra/issues",
+  "extension": "extra",
+  "displayName": "Extra",
+  "description": "The extra extension allows you to add content to blocks or components.",
+  "main": "/js/extra.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_extra"
+}

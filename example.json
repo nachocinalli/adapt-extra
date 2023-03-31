@@ -1,0 +1,16 @@
+{
+  "_extra": {
+    "_isEnabled": true,
+    "_showOnModelCompleted": false,
+    "_selector": ".component__inner",
+    "_appendTo": "bottom",
+    "_classes": "",
+    "text": "Extra content",
+    "_items": [
+      {
+        "title": "Adapt Project Site",
+        "_classes": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {},
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "block": {
+          "type": "object",
+          "properties": {
+            "_extra": {
+              "type": "object",
+              "required": false,
+              "legend": "Extra",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Enable extra content",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Set to true to enable."
+                },
+                "_showOnModelCompleted": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Show on model completed",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Set to true to show on model completed."
+                },
+                "_selector": {
+                  "type": "string",
+                  "required": false,
+                  "default": ".block__inner",
+                  "title": "Selector",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "Set to a selector to append to."
+                },
+                "_appendTo": {
+                  "type": "string",
+                  "required": false,
+                  "default": "bottom",
+                  "title": "Append to:",
+                  "enum": [
+                    "bottom",
+                    "top"
+                  ],
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "bottom",
+                      "top"
+                    ]
+                  },
+                  "validators": [],
+                  "help": "Set to 'top' to append to the top of the component."
+                },
+                "text": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Text",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Items",
+                  "items": {
+                    "type": "object",
+                    "required": false,
+                    "title": "Items",
+                    "properties": {
+                      "title": {
+                        "type": "string",
+                        "required": false,
+                        "inputType": "Text",
+                        "title": "Item Title",
+                        "default": "",
+                        "validators": [],
+                        "help": "This is the item title",
+                        "translatable": true
+                      },
+                      "body": {
+                        "type": "string",
+                        "required": false,
+                        "inputType": "TextArea",
+                        "title": "Item Body",
+                        "default": "",
+                        "validators": [],
+                        "help": "This is the item body",
+                        "translatable": true
+                      },
+                      "_graphic": {
+                        "type": "object",
+                        "required": false,
+                        "title": "Item graphic",
+                        "properties": {
+                          "src": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "This is the item graphic"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "_classes": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Classes",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "Additional classes"
+                }
+              }
+            }
+          }
+        },
+        "component": {
+          "type": "object",
+          "properties": {
+            "_extra": {
+              "type": "object",
+              "required": false,
+              "legend": "Extra",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Enable extra content",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Set to true to enable."
+                },
+                "_showOnModelCompleted": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Show on model completed",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Set to true to show on model completed."
+                },
+                "_selector": {
+                  "type": "string",
+                  "required": false,
+                  "default": ".component__inner",
+                  "title": "Selector",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "Set to a selector to append to."
+                },
+                "_appendTo": {
+                  "type": "string",
+                  "required": false,
+                  "default": "bottom",
+                  "title": "Append to:",
+                  "enum": [
+                    "bottom",
+                    "top"
+                  ],
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "bottom",
+                      "top"
+                    ]
+                  },
+                  "validators": [],
+                  "help": "Set to 'top' to append to the top of the component."
+                },
+                "text": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Text",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Items",
+                  "items": {
+                    "type": "object",
+                    "required": false,
+                    "title": "Items",
+                    "properties": {
+                      "title": {
+                        "type": "string",
+                        "required": false,
+                        "inputType": "Text",
+                        "title": "Item Title",
+                        "default": "",
+                        "validators": [],
+                        "help": "This is the item title",
+                        "translatable": true
+                      },
+                      "body": {
+                        "type": "string",
+                        "required": false,
+                        "inputType": "TextArea",
+                        "title": "Item Body",
+                        "default": "",
+                        "validators": [],
+                        "help": "This is the item body",
+                        "translatable": true
+                      },
+                      "_graphic": {
+                        "type": "object",
+                        "required": false,
+                        "title": "Item Graphic",
+                        "properties": {
+                          "src": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "This is the item graphic"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "_classes": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Classes",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "Additional classes"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
